@@ -1,0 +1,193 @@
+/* (1) Web Fonts --------------*/
+
+
+/* (2) Main Styles --------------*/
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	background-color: black;
+}
+
+a {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:visited {
+	text-decoration: none;
+}
+
+button {
+	border: none;
+	padding: 5px ;
+	margin: 5px;
+}
+
+li {
+	list-style: none;
+	margin-left: -30px;
+}
+
+.container {
+	padding: 0 1em;
+}
+
+/* (3) Header Styles --------------*/
+
+header {
+	background: linear-gradient(white -10px, black -10px, transparent 500%), url(../img/zoey.jpg) no-repeat center;
+	background-size: cover;
+	background-position: top;
+	font: 1em sans-serif;
+	color: white;
+	margin: 0;
+	padding: 100px;
+	box-shadow: inset 0 0 50px 10px black;
+}
+
+/*.menu {
+	width: 100%;
+}
+.menu-btn,
+.start-btn,
+.log-in {
+	display: inline-block;
+	vertical-align: middle;
+}*/
+
+.swapper {
+	color: white;
+}
+
+h1 {
+	margin: 10px;
+	display: inline-block;
+}
+
+/* (4) Body Style Sheet --------------*/
+/* 
+Sections:
+1. estimates
+2. 
+*/
+
+h3 {
+	margin: 0 0 0 20px;
+}
+
+.estimates {
+	background: lightgrey;
+	margin: 0;
+	padding: 2em;
+}
+
+.service-guide {
+	margin: 0;
+	padding: 2em;
+	background: darkgray;
+}
+
+.investments {
+	padding: 20px;
+	border: darkgrey solid;
+	max-width: 10.75em;
+	background-color: #f0F0f0; /* #d3d3d3 - lightgrey *//*#bbb*/
+	text-align: center;
+	border-radius: 15px;
+	margin-left: 15px;
+}
+
+input {
+	text-align: right;
+	border: none;
+	border-bottom: 3px darkgray solid; 	
+	background-color: #f0F0f0; /* #d3d3d3 - lightgrey *//*#bbb*/
+	vertical-align: 0.5px;
+	font-size: 24px;
+	width: 80px;
+	padding-right: 0px; 
+}
+
+.start-btn {
+	text-align: center;
+}
+
+.get-started {
+	margin: 10px;
+	padding: 50px 0 0;
+	text-align: center;
+}
+
+/* (5) Footer Style Sheet --------------*/
+
+footer {
+/*	min-height: 400px;
+*/	padding: 100px;
+	background-color: white;
+	font-size: 0.8em;
+}
+
+/*.contact {
+	float: left;
+	margin: 0 20px;
+}
+
+.about {
+	float: left;
+	margin: 0 20px;*/
+}
+.about a {
+	color: black;
+}
+
+
+/* (6) Media Queries --------------*/
+
+@media (min-width: 1354px) {
+
+	.menu {
+		margin: 10px;
+		width: max-content;
+		padding: 1em 1em 1em 0;
+		border-width: 0 5px 0 0;
+		border-right: white solid;
+		float: left;
+	}
+
+	.clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+}
+
+@media (min-width: 769px) {
+	.wrap {
+		min-height: calc(100vh - 177.14);
+	}
+	.container {
+		width: 80%;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+	.col {
+		display: inline-block;
+		margin-right: -4px;
+		width: 50%;
+		padding: 0 1em;
+		vertical-align: top;
+	}
+
+	.clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+
+}
+

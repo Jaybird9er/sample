@@ -1,0 +1,303 @@
+/* ========================
+	Base Styles
+======================== */
+
+* {
+	box-sizing: border-box;
+/*	border: red 1px solid;
+*/}
+
+/*html {
+	background-color: black;
+}
+*/
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	background-color: black;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+a:hover {
+	text-decoration: underline;
+}
+a:visited {
+	text-decoration: none;
+}
+
+h1 {
+	text-align: center;
+	font-size: 130%;
+}
+
+h2 {
+	text-align: center;
+	font-size: 100%;
+}
+
+.swapper {
+	color: white;
+}
+
+button {
+	border: none;
+	padding: 5px ;
+	margin: 5px;
+}
+
+li {
+	list-style: none;
+	margin-left: -30px;
+}
+
+header {
+	background: linear-gradient(white -10px, black -10px, transparent 500%), url(../img/zoey.jpg) no-repeat center;
+	background-size: cover;
+	background-position: top;
+	font: 1em sans-serif;
+	color: white;
+	margin: 0;
+	padding: 1em;
+	box-shadow: inset 0 0 50px 10px black;
+}
+
+.estimates {
+	background: lightgrey;
+	margin: 0;
+	padding: 2em 1em;
+}
+
+.service-guide {
+	margin: 0;
+	padding: 2em 1em;
+	background: darkgray;
+}
+
+.investments {
+	padding: 20px;
+	border: darkgrey solid;
+	max-width: 10.75em;
+	background-color: #f0F0f0; /* #d3d3d3 - lightgrey *//*#bbb*/
+	text-align: center;
+	border-radius: 15px;
+	margin-left: 15px;
+}
+
+input {
+	text-align: right;
+	border: none;
+	border-bottom: 3px darkgray solid; 	
+	background-color: #f0F0f0; /* #d3d3d3 - lightgrey *//*#bbb*/
+	vertical-align: 0.5px;
+	font-size: 24px;
+	width: 80px;
+	padding-right: 0px; 
+}
+
+.start-btn {
+	text-align: center;
+}
+
+.get-started {
+	margin: 10px;
+	padding: 50px 0 0;
+	text-align: center;
+}
+
+footer {
+	background-color: white;
+	font-size: 0.8em;
+	padding: 1em;
+}
+
+/* ======================== 
+  Base Layout Styles
+======================== */
+
+.container {
+	padding: 0 ;
+}
+
+.menu {
+	width: 100%;
+	padding: 1em 0;
+	border-width: 0 5px 0 0;
+	border-bottom: white solid;
+}
+
+.login button,
+.start-btn button {
+	display: none;
+}
+
+.swapper,
+.login,
+.menu-btn,
+.start-btn {
+	display: inline-block;
+	vertical-align: top;
+}
+
+.menu {
+	text-align: center;
+}
+
+footer {
+	text-align: center;
+}
+
+.col {
+	width: max-width;
+}
+
+
+/* ---- Navigation ---- */
+
+/* ---- Layout Containers ---- */
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+	.wrap {
+		min-height: calc(100vh - 234.82px);
+	}
+
+	.login button,
+	.start-btn button {
+		display: inline-block;
+	}
+
+	body {
+		position: relative;
+		padding-top: 105.85px;
+	}
+
+	.menu {
+		text-align: right;
+		position: fixed;
+		background-color: black;
+		top: 0;
+		left: 0;
+		width: 100%;
+		padding: 1em;
+		z-index: 1000;
+	}
+
+	.swapper {
+		float: left;
+		width: 0 auto;
+	}
+
+	h1 {
+		text-align: center;
+		font-size: 170%;
+	}
+
+	h2 {
+		text-align: center;
+		font-size: 130%;
+		font: normal;
+	}
+
+		.container {
+		width: 90%;
+		max-width: 1000px;
+		margin: 0 auto;
+	}
+
+	.estimates {
+	background: lightgrey;
+	margin: 0;
+	padding: 2em;
+}
+
+.service-guide {
+	margin: 0;
+	padding: 2em;
+	background: darkgray;
+}
+
+	footer {
+		text-align: left;
+	}
+
+	.col {
+		display: inline-block;
+		margin-right: -4px;
+		width: max-width;
+		padding: 0 1em;
+		vertical-align: top;
+		margin-top: 1em;
+	}
+
+}
+
+@media (min-width: 1025px) {
+	
+	body {
+		padding: 0;
+	}
+
+	header {
+/*		height: 450px;
+*/	}
+
+	.login button,
+	.start-btn button {
+		display: block;
+	}
+
+	h1 {
+		display: inline-block;
+		font-size: 170%;
+	}
+
+	h2 {
+		display: inline-block;
+	}
+
+	.menu {
+		width: max-content;
+		padding: 1em 1em 1em 0;
+		border-width: 0 5px 0 0;
+		border-right: white solid;
+		float: left;
+		text-align: left;
+		margin-right: 1em;
+		position: unset;
+	}
+
+	.swapper {
+		float: none;
+	}
+
+	.swapper,
+	.login,
+	.menu-btn,
+	.start-btn {
+		display: block;
+	}
+
+	.container {
+		width: 80%;
+		max-width: 1000px;
+		margin: 0 auto;
+		clear: both;
+		vertical-align: middle;
+	}
+
+		.clearfix::after {
+		content: "";
+		display: table;
+		clear: both;
+	}
+}
